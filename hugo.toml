@@ -16,6 +16,667 @@ enableRobotsTXT = true
     contentDir = "content"
     # languageDirection = 'rtl' for Right-To-Left languages
 
+[[menu.main]]
+  identifier = "accueil"
+  name = "Accueil"
+  parent = ""
+  url = "index.html"
+  weight = 1
+
+[[menu.main]]
+  identifier = "lecole"
+  name = "L'Ecole"
+  url = "presentation/index.html"
+  weight = 2
+  parent = ""
+
+  [[menu.main]]
+    identifier = "presentation"
+    name = "Présentation"
+    url = "presentation/index.html"
+    weight = 1
+    parent = "lecole"
+
+  [[menu.main]]
+    identifier = "president"
+    name = "Président"
+    url = "president/index.html"
+    weight = 2
+    parent = "lecole"
+
+  [[menu.main]]
+    identifier = "actualites"
+    name = "Actualités"
+    url = "actualites/index.html"
+    weight = 3
+    parent = "lecole"
+
+[[menu.main]]
+  identifier = "bts-dts"
+  name = "BTS / DTS"
+  url = "#"
+  weight = 3
+  parent = ""
+
+  [[menu.main]]
+    identifier = "bts-sciences-economiques-et-de-gestion"
+    name = "Sciences Economiques et de Gestion"
+    url = "#"
+    weight = 1
+    parent = "bts-dts"
+
+    [[menu.main]]
+      identifier = "transport-logistique"
+      name = "Transport Logistique"
+      url = "programmes/transport-logistique/index.html"
+      weight = 1
+      parent = "bts-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "gestion-des-projets"
+      name = "Gestion des projets"
+      url = "programmes/gestion-des-projets/index.html"
+      weight = 2
+      parent = "bts-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "commerce-international"
+      name = "Commerce International"
+      url = "programmes/commerce-international/index.html"
+      weight = 3
+      parent = "bts-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "banque-finance-assurance"
+      name = "Banque Finance Assurance"
+      url = "programmes/banque-finance-assurance/index.html"
+      weight = 4
+      parent = "bts-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "assistant-de-gestion-pme-pmi"
+      name = "Assistant de gestion PME-PMI"
+      url = "programmes/assistant-de-gestion-pme-pmi/index.html"
+      weight = 5
+      parent = "bts-sciences-economiques-et-de-gestion"
+
+  [[menu.main]]
+    identifier = "agriculture-environnement"
+    name = "Agriculture & Environnement"
+    url = "#"
+    weight = 2
+    parent = "bts-dts"
+
+    [[menu.main]]
+      identifier = "productions-animales"
+      name = "Productions Animales"
+      url = "programmes/productions-animales/index.html"
+      weight = 1
+      parent = "agriculture-environnement"
+
+    [[menu.main]]
+      identifier = "production-horticole"
+      name = "Production Horticole"
+      url = "programmes/production-horticole/index.html"
+      weight = 2
+      parent = "agriculture-environnement"
+
+  [[menu.main]]
+    identifier = "petrole-et-gaz"
+    name = "Pétrole et Gaz"
+    url = "#"
+    weight = 3
+    parent = "bts-dts"
+
+    [[menu.main]]
+      identifier = "ingenierie-petroliere"
+      name = "Ingénierie Pétrolière"
+      url = "programmes/ingenierie-petroliere/index.html"
+      weight = 1
+      parent = "petrole-et-gaz"
+
+    [[menu.main]]
+      identifier = "qualite-hygiene-securite-environnement"
+      name = "Qualité Hygiène Sécurité Environnement (QHSE)"
+      url = "#"
+      weight = 2
+      parent = "petrole-et-gaz"
+
+  [[menu.main]]
+    identifier = "marketing-communication"
+    name = "Marketing Communication"
+    url = "programmes/marketing-communication/index.html"
+    weight = 4
+    parent = "bts-dts"
+
+  [[menu.main]]
+    identifier = "bureautique-secretariat"
+    name = "Bureautique Secrétariat"
+    url = "programmes/bureautique-secretariat/index.html"
+    weight = 5
+    parent = "bts-dts"
+
+[[menu.main]]
+  identifier = "licences"
+  name = "Licences"
+  url = "#"
+  weight = 4
+  parent = ""
+
+  [[menu.main]]
+    identifier = "licence-sciences-economiques-et-de-gestion"
+    name = "Sciences Economiques et de Gestion"
+    url = "#"
+    weight = 1
+    parent = "licences"
+
+    [[menu.main]]
+      identifier = "licence-professionnelle-banque-finance-assurance"
+      name = "Licence professionnelle Banque Finance Assurance"
+      url = "licence-professionnelle-banque-finance-assurance/index.html"
+      weight = 1
+      parent = "licence-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "comptabilite-gestion"
+      name = "Licence Professionnelle en Comptabilité Gestion"
+      url = "programmes/comptabilite-gestion/index.html"
+      weight = 2
+      parent = "licence-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "gestion-des-entreprises-et-management-des-organisations"
+      name = "Licence professionnelle Gestion des Entreprises et Management des Organisations"
+      url = "licence-professionnelle-gestion-des-entreprises-et-management-des-organisations/index.html"
+      weight = 3
+      parent = "licence-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "gestion-logistique-et-transport"
+      name = "Licence Professionnelle Transport Logistique"
+      url = "programmes/gestion-logistique-et-transport/index.html"
+      weight = 4
+      parent = "licence-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "entrepreneuriat-et-gestion-de-pme-pmi"
+      name = "Licence Entrepreneuriat et Gestion de PME / PMI"
+      url = "programmes/entrepreneuriat-et-gestion-de-pme-pmi/index.html"
+      weight = 5
+      parent = "licence-sciences-economiques-et-de-gestion"
+
+    [[menu.main]]
+      identifier = "gestion-des-ressources-humaines"
+      name = "Licence professionnelle en Gestion des Ressources Humaines"
+      url = "licence-professionnelle-en-gestion-des-ressources-humaines/index.html"
+      weight = 6
+      parent = "licence-sciences-economiques-et-de-gestion"
+
+  [[menu.main]]
+    identifier = "sciences-juridiques"
+    name = "Sciences Juridiques"
+    url = "#"
+    weight = 2
+    parent = "licences"
+
+    [[menu.main]]
+      identifier = "licence-en-droit-des-affaires-et-fiscalite"
+      name = "Licence en Droit des affaires et fiscalité"
+      url = "licence-en-droit-des-affaires-et-fiscalite/index.html"
+      weight = 1
+      parent = "sciences-juridiques"
+
+  [[menu.main]]
+    identifier = "marketing-communication-2"
+    name = "Licence Professionnelle en Marketing Communication"
+    url = "programmes/marketing-communication-2/index.html"
+    weight = 3
+    parent = "licences"
+
+[[menu.main]]
+  identifier = "masters"
+  name = "Masters"
+  url = "#"
+  weight = 5
+  parent = ""
+
+  [[menu.main]]
+    identifier = "sciences-economiques-et-de-gestion-master"
+    name = "Sciences Economiques et de Gestion"
+    url = "#"
+    weight = 1
+    parent = "masters"
+
+    [[menu.main]]
+      identifier = "banque-finance"
+      name = "Master Professionnel Banque Finance"
+      url = "programmes/banque-finance/index.html"
+      weight = 1
+      parent = "sciences-economiques-et-de-gestion-master"
+
+    [[menu.main]]
+      identifier = "master-comptabilite-gestion"
+      name = "Master Comptabilité Gestion"
+      url = "programmes/master-comptabilite-gestion/index.html"
+      weight = 2
+      parent = "sciences-economiques-et-de-gestion-master"
+
+    [[menu.main]]
+      identifier = "master-gestion-logistique-et-transport"
+      name = "Master Gestion Logistique et Transport"
+      url = "programmes/master-gestion-logistique-et-transport/index.html"
+      weight = 3
+      parent = "sciences-economiques-et-de-gestion-master"
+
+  [[menu.main]]
+    identifier = "sciences-juridiques-master"
+    name = "Sciences Juridiques"
+    url = "#"
+    weight = 2
+    parent = "masters"
+
+    [[menu.main]]
+      identifier = "master-professionnel-droit-des-affaires-et-fiscalite"
+      name = "Master Professionnel : Droit des affaires et fiscalité"
+      url = "master-professionnel-droit-des-affaires-et-fiscalite/index.html"
+      weight = 1
+      parent = "sciences-juridiques-master"
+
+    [[menu.main]]
+      identifier = "master-professionnel-droit-communautaire"
+      name = "Master Professionnel : Droit communautaire"
+      url = "master-professionnel-droit-communautaire/index.html"
+      weight = 2
+      parent = "sciences-juridiques-master"
+
+    [[menu.main]]
+      identifier = "master-professionnel-economie-et-management-des-mines-et-de-lenvironnement"
+      name = "Master Professionnel : Économie et management des mines et de l’environnement"
+      url = "master-professionnel-economie-et-management-des-mines-et-de-lenvironnement/index.html"
+      weight = 3
+      parent = "masters"
+    
+    [[menu.main]]
+      identifier = "master-marketing-communication"
+      name = "Master Marketing Communication"
+      url = "programmes/master-marketing-communication/index.html"
+      weight = 4
+      parent = "masters"
+
+  [[menu.main]]
+  identifier = "certificats-de-specialite"
+  name = "Certificats de spécialité"
+  url = "#"
+  weight = 6
+  parent = ""
+
+  [[menu.main]]
+    identifier = "aviculture"
+    name = "Aviculture"
+    url = "#"
+    weight = 1
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "agents-conduite-delevage-de-poulet-de-chair"
+      name = "Agents Conduite D’Elevage de Poulet de Chair"
+      url = "programmes/agents-conduite-delevage-de-poulet-de-chair/index.html"
+      weight = 1
+      parent = "aviculture"
+
+    [[menu.main]]
+      identifier = "cs-aviculture"
+      name = "Agents Conduite D’Elevage de Poulet de Ponte"
+      url = "programmes/cs-aviculture/index.html"
+      weight = 2
+      parent = "aviculture"
+
+  [[menu.main]]
+    identifier = "digitale"
+    name = "Digitale"
+    url = "#"
+    weight = 2
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "operateur-de-marketing-digital"
+      name = "Opérateur de Marketing Digital"
+      url = "programmes/operateur-de-marketing-digital/index.html"
+      weight = 1
+      parent = "digitale"
+
+    [[menu.main]]
+      identifier = "infographe-maquettiste"
+      name = "Infographe Maquettiste"
+      url = "#"
+      weight = 2
+      parent = "digitale"
+
+    [[menu.main]]
+      identifier = "developpement-dapplications-web-et-mobile"
+      name = "Développement d'applications Web et Mobile"
+      url = "#"
+      weight = 3
+      parent = "digitale"
+
+  [[menu.main]]
+    identifier = "tourisme"
+    name = "Tourisme"
+    url = "#"
+    weight = 3
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "conception-de-circuits-touristiques"
+      name = "Conception de Circuits Touristiques"
+      url = "programmes/conception-de-circuits-touristiques/index.html"
+      weight = 1
+      parent = "tourisme"
+
+    [[menu.main]]
+      identifier = "guidage-touristique"
+      name = "Guidage Touristique"
+      url = "programmes/guidage-touristique/index.html"
+      weight = 2
+      parent = "tourisme"
+
+    [[menu.main]]
+      identifier = "guide-interprete"
+      name = "Guide Interprete"
+      url = "programmes/guide-interprete/index.html"
+      weight = 3
+      parent = "tourisme"
+
+  [[menu.main]]
+    identifier = "agroalimentaire"
+    name = "Agroalimentaire"
+    url = "#"
+    weight = 4
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "technique-de-traitement-et-de-stabilisation-des-fruits-et-legumes"
+      name = "Technique de Traitement et de Stabilisation des Fruits et Légumes"
+      url = "programmes/technique-de-traitement-et-de-stabilisation-des-fruits-et-legumes/index.html"
+      weight = 1
+      parent = "agroalimentaire"
+
+    [[menu.main]]
+      identifier = "technologie-de-transformation-du-lait-et-de-la-creme"
+      name = "Technologie de Transformation du Lait et de la Crème"
+      url = "programmes/ouvrier-qualifie-en-technologie-de-transformation-du-lait-et-de-la-creme/index.html"
+      weight = 2
+      parent = "agroalimentaire"
+
+    [[menu.main]]
+      identifier = "transformation-des-produits-agricoles"
+      name = "Transformation Des Produits Agricoles"
+      url = "programmes/transformation-des-produits-agricoles/index.html"
+      weight = 3
+      parent = "agroalimentaire"
+
+  [[menu.main]]
+    identifier = "informatique"
+    name = "Informatique"
+    url = "#"
+    weight = 5
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "administration-reseaux-informatiques-dentreprises"
+      name = "Administration réseaux informatiques d’entreprises"
+      url = "#"
+      weight = 1
+      parent = "informatique"
+
+    [[menu.main]]
+      identifier = "cablage-informatique-niveau-2"
+      name = "Câblage informatique : niveau 2"
+      url = "#"
+      weight = 2
+      parent = "informatique"
+
+    [[menu.main]]
+      identifier = "support-informatique"
+      name = "Support informatique"
+      url = "#"
+      weight = 3
+      parent = "informatique"
+
+  [[menu.main]]
+    identifier = "batiment"
+    name = "Bâtiment"
+    url = "#"
+    weight = 6
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "carrelage-revetements"
+      name = "Carrelage / Revêtements"
+      url = "#"
+      weight = 1
+      parent = "batiment"
+
+    [[menu.main]]
+      identifier = "maconnerie"
+      name = "Maçonnerie"
+      url = "#"
+      weight = 2
+      parent = "batiment"
+
+    [[menu.main]]
+      identifier = "pavage"
+      name = "Pavage"
+      url = "#"
+      weight = 3
+      parent = "batiment"
+
+    [[menu.main]]
+      identifier = "installateur-plomberie-sanitaire"
+      name = "Installateur Plomberie Sanitaire"
+      url = "#"
+      weight = 4
+      parent = "batiment"
+
+  [[menu.main]]
+    identifier = "sante"
+    name = "Santé"
+    url = "#"
+    weight = 7
+    parent = "certificats-de-specialite"
+
+    [[menu.main]]
+      identifier = "ambulancier"
+      name = "Ambulancier"
+      url = "#"
+      weight = 1
+      parent = "sante"
+
+    [[menu.main]]
+      identifier = "brancardier"
+      name = "Brancardier"
+      url = "#"
+      weight = 2
+      parent = "sante"
+
+    [[menu.main]]
+      identifier = "agent-de-proprete-et-dhygiene"
+      name = "Agent de Propreté et d’Hygiène"
+      url = "#"
+      weight = 3
+      parent = "sante"
+  [[menu.main]]
+  identifier = "seminaires"
+  name = "Séminaires"
+  url = "#"
+  weight = 8
+  parent = ""
+
+  [[menu.main]]
+    identifier = "sensibilisation"
+    name = "Sensibilisation"
+    url = "#"
+    weight = 1
+    parent = "seminaires"
+
+    [[menu.main]]
+      identifier = "se-defendre-dans-le-monde-numerique"
+      name = "Se défendre dans le monde numérique"
+      url = "programmes/se-defendre-dans-le-monde-numerique/index.html"
+      weight = 1
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "se-preparer-a-une-cybercrise"
+      name = "Se préparer a une cybercrise"
+      url = "programmes/se-preparer-a-une-cybercrise/index.html"
+      weight = 2
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "se-proteger-contre-les-cybercriminels"
+      name = "Se protéger contre les cybercriminels"
+      url = "programmes/se-proteger-contre-les-cybercriminels/index.html"
+      weight = 3
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "bien-identifier-linformation-strategique-a-proteger"
+      name = "Bien identifier l’information stratégique à protéger"
+      url = "programmes/bien-identifier-linformation-strategique-a-proteger/index.html"
+      weight = 4
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "developper-sa-cybercompetitivite"
+      name = "Développer sa cybercompétitivité"
+      url = "programmes/developper-sa-cybercompetitivite/index.html"
+      weight = 5
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "evoluer-dans-le-monde-numerique"
+      name = "Évoluer dans le monde numérique"
+      url = "programmes/evoluer-dans-le-monde-numerique/index.html"
+      weight = 6
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "le-vocabulaire-de-la-cyber-securite"
+      name = "Le vocabulaire de la cyber-sécurité"
+      url = "programmes/le-vocabulaire-de-la-cyber-securite/index.html"
+      weight = 7
+      parent = "sensibilisation"
+
+    [[menu.main]]
+      identifier = "les-menaces-du-cyber-espace"
+      name = "Les menaces du cyber-espace"
+      url = "programmes/les-menaces-du-cyber-espace/index.html"
+      weight = 8
+      parent = "sensibilisation"
+
+  [[menu.main]]
+    identifier = "hacking"
+    name = "Hacking"
+    url = "#"
+    weight = 2
+    parent = "seminaires"
+
+    [[menu.main]]
+      identifier = "technique-de-pentest"
+      name = "Technique de Pentest"
+      url = "programmes/technique-de-pentest/index.html"
+      weight = 1
+      parent = "hacking"
+
+    [[menu.main]]
+      identifier = "hacking-applicatif"
+      name = "Hacking applicatif"
+      url = "programmes/hacking-applicatif/index.html"
+      weight = 2
+      parent = "hacking"
+
+    [[menu.main]]
+      identifier = "hacking-reseau"
+      name = "Hacking réseau"
+      url = "programmes/hacking-reseau/index.html"
+      weight = 3
+      parent = "hacking"
+
+    [[menu.main]]
+      identifier = "hacking-web"
+      name = "Hacking web"
+      url = "programmes/hacking-web/index.html"
+      weight = 4
+      parent = "hacking"
+
+    [[menu.main]]
+      identifier = "hacking-windows"
+      name = "Hacking windows"
+      url = "programmes/hacking-windows/index.html"
+      weight = 5
+      parent = "hacking"
+
+    [[menu.main]]
+      identifier = "les-fondamentaux-du-hacking"
+      name = "Les Fondamentaux du Hacking"
+      url = "programmes/les-fondamentaux-du-hacking/index.html"
+      weight = 6
+      parent = "hacking"
+
+  [[menu.main]]
+    identifier = "securite"
+    name = "Sécurité"
+    url = "#"
+    weight = 3
+    parent = "seminaires"
+
+    [[menu.main]]
+      identifier = "ransomware-comment-sen-proteger"
+      name = "Ransomware : comment s’en protéger"
+      url = "programmes/ransomware-comment-sen-proteger/index.html"
+      weight = 1
+      parent = "securite"
+
+    [[menu.main]]
+      identifier = "la-gestion-des-log"
+      name = "La Gestion des Log"
+      url = "programmes/la-gestion-des-log/index.html"
+      weight = 2
+      parent = "securite"
+
+    [[menu.main]]
+      identifier = "les-bases-de-la-cryptographie"
+      name = "Les Bases de la Cryptographie"
+      url = "programmes/les-bases-de-la-cryptographie/index.html"
+      weight = 3
+      parent = "securite"
+
+    [[menu.main]]
+      identifier = "detection-dintrusions"
+      name = "Détection d’intrusions"
+      url = "programmes/detection-dintrusions/index.html"
+      weight = 4
+      parent = "securite"
+
+    [[menu.main]]
+      identifier = "les-fondamentaux-niveau-1"
+      name = "Les Fondamentaux Niveau 1"
+      url = "programmes/les-fondamentaux-niveau-1/index.html"
+      weight = 5
+      parent = "securite"
+
+    [[menu.main]]
+      identifier = "les-fondamentaux-niveau-2"
+      name = "Les Fondamentaux Niveau 2"
+      url = "programmes/les-fondamentaux-niveau-2/index.html"
+      weight = 6
+      parent = "securite"
+
+
+
+
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5

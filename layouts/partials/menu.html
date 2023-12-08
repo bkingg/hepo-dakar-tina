@@ -1,0 +1,44 @@
+<nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow"
+    data-toggle-icon="&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-align-justify&quot;&gt;&lt;/i&gt;"
+    data-close-icon="&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;far fa-window-close&quot;&gt;&lt;/i&gt;"
+    data-full-width="yes">
+    <ul class="hfe-nav-menu">
+        {{- range site.Menus.main }}
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
+                {{- if .HasChildren }}
+                    <div class="hfe-has-submenu-container">
+                        <a class="hfe-menu-item" href="{{ .URL }}">
+                            {{ .Name }}
+                            <span class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i class='fa'></i></span>
+                        </a>
+                    </div>
+                    <ul class="sub-menu">
+                        {{ range .Children }}
+                            <li class="level-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children hfe-has-submenu hfe-creative-menu">
+                                {{- if .HasChildren }}
+                                    <div class="hfe-has-submenu-container">
+                                        <a class="hfe-sub-menu-item" href="{{ .URL }}">
+                                            {{ .Name }}
+                                            <span class='hfe-menu-toggle sub-arrow hfe-menu-child-1'><i class='fa'></i></span>
+                                        </a>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        {{ range .Children }}
+                                            <li class="level-3 menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
+                                                <a class="hfe-sub-menu-item" href="{{ .URL }}">{{ .Name }}</a>
+                                            </li>
+                                        {{- end }}
+                                    </ul>
+                                {{- else }}
+                                    <a class="hfe-sub-menu-item" href="{{ .URL }}">{{ .Name }}</a>
+                                {{- end }}
+                            </li>
+                        {{- end }}
+                    </ul>
+                {{- else }}
+                    <a class="hfe-menu-item" href="{{ .URL }}">{{ .Name }}</a>
+                {{- end }}
+            </li>
+        {{- end }}
+    </ul>
+</nav>
